@@ -83,16 +83,12 @@ The Fashion article is content-complete but has **not** passed final editorial
 sign-off. It ships labeled "Preview — final review pending" everywhere. When sign-off
 happens:
 
-- [ ] Final editorial review of `docs/domains/fashion/report.html` against
+- [x] Final editorial review of `docs/domains/fashion/report.html` against
       `domains/fashion/03-article/draft.md` (and the repo's `publishing/checklist.md`).
-- [ ] Remove the preview banner: in `docs/domains/fashion/report.html`, delete the
-      single clearly-marked block between
-      `<!-- PREVIEW BANNER — REMOVE AT PUBLISH TIME -->` and
-      `<!-- END PREVIEW BANNER -->`. Nothing else references it.
-- [ ] Update status wording: "Preview — final review pending" appears in the report
-      byline and fan-out card, "final review pending" on the home card, and
-      "Preview" in `summary.html`'s kicker — change to "Published" + date. The
-      "In research" status chips (home + domain landing) become "Published".
+      Done 2026-08 — user sign-off; checklist pass recorded in session log.
+- [x] Remove the preview banner — done 2026-08.
+- [x] Update status wording to "Published" + date (report byline, fan-out card,
+      home card, summary kicker, status chips) — done 2026-08.
 - [ ] Re-run the sanity greps: `grep -ri 'theafolks' docs/` (must be empty — that's
       the old misspelling), `grep -r 'TODO-replace' docs/` (must be empty).
 - [ ] Confirm the evidence log still matches `domains/fashion/00-research/sources.md`

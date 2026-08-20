@@ -2,7 +2,7 @@
 
 The public publishing platform for Two Hills Lab's domain reports.
 
-Status: ☑ Brainstorm (grilled thesis) ☑ Design (multi-domain generalization in progress) ☐ Build
+Status: ☑ Brainstorm (grilled thesis) ☑ Design ☑ Build (live on GitHub Pages, /docs — custom-domain DNS + form service still pending, see DEPLOY.md)
 
 **Hosting decision:** GitHub Pages — static output only. No server-side rendering, no backend, no database. Implications for later Build phase: the site must be a static site generator (Jekyll has native GitHub Pages support; Astro/11ty/Hugo work via GitHub Actions) or plain static HTML. Email capture (see design spec §7) needs a third-party static-friendly form service (e.g. Buttondown, ConvertKit, Formspree) — GitHub Pages cannot run capture logic itself.
 
