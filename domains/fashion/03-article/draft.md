@@ -1,6 +1,6 @@
 # Fashion's AI Moat Isn't the Tools — It's the Data Network Competitors Can't Buy Into
 
-*By Sudhir Patavardhan · Two Hills Lab*
+*By Manasi K G & Sudhir Patavardhan · Two Hills Lab*
 
 Fashion is spending on AI the way every industry is spending on AI: to automate what it already does. Heading into 2025, 75% of fashion executives named AI-driven demand forecasting and inventory management a priority [#45]. By late 2025, the industry's flagship annual survey had executives calling AI the single biggest opportunity for 2026 — ahead of product differentiation and sustainability [#47]. Almost all of that money buys automation: something the industry already does — predicting demand, photographing product, inspecting handbags — done faster and cheaper by a model. That is real value — and it is purchasable, which means your competitors can have it on identical terms. The question that decides who extracts durable value is different: what does AI make possible that was previously impossible, and how does that capability become part of how the institution itself works, so it compounds? Fashion offers an unusually clean test: two AI answers to counterfeiting — one automates the expert appraiser, the other abolishes the question the appraiser existed to answer — and they anchor everything that follows.
 
