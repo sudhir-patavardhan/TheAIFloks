@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methodology — the Two Hills framework, evidence tiers, and the grill — Two Hills Lab</title>
+<meta name="description" content="How Two Hills Lab reports are built: the Two Hills 2×2 (Automation vs. Invention × Individual vs. Institutional), the P/R/N/V evidence-tier system, and the adversarial grill step every thesis must survive.">
+<meta property="og:title" content="Methodology — Two Hills Lab">
+<meta property="og:description" content="The framework, the evidence tiers, and the adversarial review step — so a skeptical reader can audit how a report was built, not just read its output.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23453D82'/%3E%3Cpath d='M2 26 L11 12 L17 20 L23 9 L30 26 Z' fill='%23F4F5F3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="./" class="wordmark">
+      <span class="name">Two Hills Lab</span>
+      <span class="tag mono">theAIFolks.com</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="./">Domains</a>
+      <a href="problems/">Unsolved Problems</a>
+      <a href="methodology.html" aria-current="page">Methodology</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-sm" href="index.html#subscribe">Subscribe</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <nav class="breadcrumb-inner" aria-label="Breadcrumb">
+    <a href="./">Home</a><span class="sep" aria-hidden="true">/</span><span aria-current="page">Methodology</span>
+    <span class="breadcrumb-url mono">/methodology</span>
+  </nav>
+</div>
+
+<main id="main">
+<div class="container">
+
+  <section class="no-rule">
+    <span class="section-kicker" style="margin-top:24px;">Methodology</span>
+    <h1 class="serif" style="font-size:clamp(27px,3.8vw,40px);max-width:24ch;">The Two Hills of AI: Automation vs. Invention</h1>
+    <div class="page-prose" style="margin-top:18px;">
+      <p>Most enterprise AI strategy is framed around productivity: automate an existing manual process, count the hours saved. Real value — but <strong>productivity gains from AI automation are table stakes</strong>. If you can automate a process with AI, so can your competitor, usually by buying the same tools. Efficiency everyone can purchase is not a differentiator; it's the new baseline.</p>
+      <p>The more interesting question: <strong>what can AI let us do that was previously impossible?</strong></p>
+      <p><strong>Invention subsumes automation. The reverse is not true.</strong> The invention path, done right, delivers the productivity gains anyway — as a byproduct.</p>
+    </div>
+  </section>
+
+  <section id="quadrants">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">The 2×2</span>
+        <h2>Scope of impact × nature of use</h2>
+      </div>
+    </div>
+    <div class="quad-table-wrap">
+      <table class="quad-table">
+        <thead>
+          <tr><th scope="col" style="width:12%;"></th><th scope="col">Individual</th><th scope="col">Institutional</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Invent</th>
+            <td><span class="qname">Individual Invention</span>Brilliant one-off tools built by your best people. Genuine innovation, but it dies when the builder moves on.</td>
+            <td class="hl"><span class="qname">Institutional Capability</span>New abilities embedded in how the organization itself works. Compounding. Hard to copy. <strong>Where durable value lives. Finish here.</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Automate</th>
+            <td><span class="qname">Personal Productivity</span>Copilots, prompt-assisted work. Valuable, but it walks out the door with each employee. <strong>Start here.</strong></td>
+            <td><span class="qname">Process Automation at Scale</span>Automated organizational workflows. Real savings, replicable by anyone with a budget. Efficiency everyone can buy is the new baseline.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="page-prose" style="margin-top:20px;">
+      <p>Every AI journey starts in the bottom half — that's where the quick wins are. Durable value lives in one quadrant only: <strong>institutional capability</strong>. Personal productivity is a fine place to start. Institutional value is the only place worth finishing.</p>
+      <p>The diagnostic question, for every AI initiative on a roadmap: <strong>is this automating something we already do — or inventing something we couldn't do before?</strong> Both are legitimate. Only one compounds.</p>
+    </div>
+  </section>
+
+  <section id="reference-case">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">The reference case</span>
+        <h2>Enterprise quality engineering</h2>
+      </div>
+    </div>
+    <div class="page-prose">
+      <p>The framework was built from one lived case: reimagining end-to-end UI test automation at scale.</p>
+      <ul>
+        <li><strong>Obvious path (automation):</strong> AI generates test scripts from natural language. A legitimate productivity win — but real-world usage showed generated scripts couldn't keep pace with application change. Same constraints, faster output.</li>
+        <li><strong>Different question:</strong> where should the intelligence live? Answer: in understanding the <em>intent</em> of a use case and figuring out execution the way a human tester would — not in generating scripts.</li>
+        <li><strong>Result (invention):</strong> a platform that reasons about user intent rather than producing fixed scripts. Building for capability rather than a specific tool meant it covered multiple platforms and device types, scaled to a very large number of use cases, and kept its own tests current as the product evolved. Productivity gains followed as a byproduct.</li>
+      </ul>
+      <p>This case sits on the <a href="problems/#quality-engineering">Unsolved Problems index</a> as the calibration entry every domain is measured against.</p>
+    </div>
+  </section>
+
+  <section id="rubric">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Applying the framework to a new domain</span>
+        <h2>Five steps, same order, every domain</h2>
+      </div>
+    </div>
+    <ol class="step-list" style="max-width:760px;">
+      <li><strong>Map current investment.</strong> Where is the money and attention actually going? Classify each major initiative or vendor category into a quadrant. Expected finding in most domains: heavy concentration in the bottom half. That concentration <em>is</em> the story — evidence of a commoditizing baseline.</li>
+      <li><strong>Identify the binding constraints.</strong> What has always made the domain's hard problems hard? Cost of expert attention that doesn't scale, unreadable unstructured data, combinatorial search spaces, feedback loops too slow, coordination costs across silos.</li>
+      <li><strong>Test the constraint against AI.</strong> For each "unsolvable" problem: does AI remove the <em>actual</em> binding constraint, or just accelerate work within it? Producing output faster while the fundamental constraint remains is automation dressed as invention — the script-generation trap.</li>
+      <li><strong>Find the institutional-capability formulation.</strong> Ask "where should the intelligence live?" — usually upstream of where the automation tools sit. What new ability could be embedded in how organizations in this domain work, such that it compounds and is hard to copy?</li>
+      <li><strong>Falsification check.</strong> What evidence would prove this domain is an exception — that automation <em>is</em> the moat here? Actively look for it. Record the outcome either way.</li>
+    </ol>
+    <div class="page-prose" style="margin-top:22px;">
+      <p><strong>Anti-patterns we watch for</strong> — in others' initiatives and in our own analysis: faster output, same constraint (the script-generation trap); tool worship (building for a specific tool instead of a capability); purchased differentiation (claiming moats from vendor products competitors can also buy); and individual invention mistaken for institutional capability (genius one-offs that die with the builder).</p>
+    </div>
+  </section>
+
+  <section id="tiers">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Evidence discipline</span>
+        <h2>The P/R/N/V tier system</h2>
+      </div>
+    </div>
+    <p class="section-intro" style="margin-bottom:20px;">Every claim used anywhere in a report must first appear in that domain's evidence log — numbered, dated, and tiered. The tier is a trust <em>ranking</em>, not a category, which is why it renders as a single hue stepped by strength rather than four unrelated colors. Each log ends with a "Known gaps" block: the claims we looked for and could not establish. Showing what a report doesn't know is part of the method, not a disclaimer.</p>
+    <div class="tier-def-list" style="max-width:760px;">
+      <div class="tier-def">
+        <span class="tier-badge p">P</span>
+        <div><span class="t">Primary</span><p>Filings, earnings calls, official company statements, court filings, government data. The strongest tier — a party speaking on the record about itself, with consequences for lying. Note: self-interested primary sources (a consortium reporting its own scale) are still flagged in the row notes.</p></div>
+      </div>
+      <div class="tier-def">
+        <span class="tier-badge r">R</span>
+        <div><span class="t">Industry report</span><p>McKinsey, Bain, BCG, Coresight, Gartner, academic and peer-reviewed work. Methodical, but often gated, sometimes secondary-sourced — the log notes when a figure could not be verified against the primary document.</p></div>
+      </div>
+      <div class="tier-def">
+        <span class="tier-badge n">N</span>
+        <div><span class="t">News / trade press</span><p>Journalism and trade coverage. Useful for events and controversies; weak for performance figures — the log's most-repeated caveat is a trade-press KPI that traces to no primary source.</p></div>
+      </div>
+      <div class="tier-def">
+        <span class="tier-badge v">V</span>
+        <div><span class="t">Vendor claim</span><p>The weakest tier, admitted as evidence of <em>claims only, never outcomes</em>. A vendor's accuracy figure proves the vendor makes that claim — nothing more, until independently audited.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="grill">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Adversarial review</span>
+        <h2>The grill: every thesis is attacked before it's published</h2>
+      </div>
+    </div>
+    <div class="page-prose">
+      <p>Between research and publication, every candidate thesis goes through a recorded adversarial session — the grill. Attack angles are run systematically: the evidence attack (which load-bearing facts rest on a single or self-interested source?), counterexamples inside and outside the domain, the constraint attack (was the binding constraint actually removed, or removed only in theory?), the incumbent's rebuttal (the strongest case against the thesis, argued in good faith), survivorship and selection bias, and falsifiability (what observable events would prove this wrong?).</p>
+      <p>A thesis can survive, die, or mutate. All three outcomes are recorded. Arguments that survive graduate into the analysis; arguments that die are kept as the objection-handling record; mutations are stated in the published piece rather than smoothed over. The Fashion &amp; Luxury thesis, for example, mutated three times under the grill — its scope narrowed from "factory to resale" to "at manufacture, with the resale loop as the unproven next leg" — and that narrowing is stated plainly in the <a href="domains/fashion/report.html#blindspots">report's Blindspots section</a>, along with three named falsifiers on a public watch list. One grill attack that could not be resolved became a public <a href="problems/#fashion">Unsolved Problems entry</a> instead of a buried caveat.</p>
+      <p>The point of all three mechanisms — the tiers, the gaps, the grill — is the same: a skeptical reader should be able to audit <em>how</em> a report was built, not just read its output.</p>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom footer-bottom-solo">
+      <span>© 2026 Two Hills Lab.</span>
+      <span class="mono">theAIFolks.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
