@@ -109,44 +109,49 @@
     </div>
     <div class="map-wrap">
       <div>
-        <svg viewBox="0 0 480 380" role="img" aria-label="Two Hills quadrant map for Fashion. Vertical axis: Automate (bottom) to Invent (top). Horizontal axis: Individual (left) to Institutional (right). Ten of twelve initiative categories cluster in Process Automation at Scale (bottom right). The Aura provenance consortium (verified) and the forecast-to-shelf loop (unverified) sit in Institutional Capability (top right, the finish-here quadrant). The two individual-scope quadrants have no publicly reported initiatives. A dotted arrow runs from Personal Productivity (start here, bottom left) toward Institutional Capability." style="border:1px solid var(--border-strong);background:var(--surface);">
+        <svg viewBox="0 0 524 428" role="img" aria-label="Two Hills quadrant map for Fashion. The vertical axis runs from Automating existing processes at the bottom to Inventing new capabilities at the top. The horizontal axis, labeled Scope of Impact, runs from Individual on the left to Institutional on the right. Ten of twelve initiative categories cluster in Process Automation at Scale (bottom right). The Aura provenance consortium (verified) and the forecast-to-shelf loop (unverified) sit in Institutional Capability (top right, the finish-here quadrant). The two individual-scope quadrants have no publicly reported initiatives. A dotted arrow runs from Personal Productivity (start here, bottom left) toward Institutional Capability." style="background:var(--surface);">
         <defs>
           <marker id="qarrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
             <path d="M0,0 L8,4 L0,8 z" fill="var(--ink-faint)"/>
           </marker>
         </defs>
-        <!-- finish-here quadrant emphasis (top right = Invent x Institutional) -->
-        <rect x="240" y="16" width="224" height="174" fill="var(--ic-soft)"/>
-        <line x1="240" y1="16" x2="240" y2="364" stroke="var(--border-strong)" stroke-width="1"/>
-        <line x1="16" y1="190" x2="464" y2="190" stroke="var(--border-strong)" stroke-width="1"/>
-        <text x="248" y="30" font-size="9.5" fill="var(--ink-faint)" font-family="ui-monospace,monospace">INVENT</text>
-        <text x="248" y="358" font-size="9.5" fill="var(--ink-faint)" font-family="ui-monospace,monospace">AUTOMATE</text>
-        <text x="20" y="204" font-size="9.5" fill="var(--ink-faint)" font-family="ui-monospace,monospace">INDIVIDUAL</text>
-        <text x="460" y="181" font-size="9.5" fill="var(--ink-faint)" font-family="ui-monospace,monospace" text-anchor="end">INSTITUTIONAL</text>
+        <!-- axis rails, outside the plot -->
+        <line x1="44" y1="364" x2="44" y2="20" stroke="var(--ink-faint)" stroke-width="1" marker-end="url(#qarrow)"/>
+        <text x="32" y="103" font-size="8" fill="var(--ink-faint)" font-family="ui-monospace,monospace" letter-spacing="0.5" text-anchor="middle" transform="rotate(-90 32 103)">INVENTING NEW CAPABILITIES</text>
+        <text x="32" y="277" font-size="8" fill="var(--ink-faint)" font-family="ui-monospace,monospace" letter-spacing="0.5" text-anchor="middle" transform="rotate(-90 32 277)">AUTOMATING EXISTING PROCESSES</text>
+        <line x1="60" y1="382" x2="504" y2="382" stroke="var(--ink-faint)" stroke-width="1" marker-end="url(#qarrow)"/>
+        <text x="60" y="398" font-size="9" fill="var(--ink-faint)" font-family="ui-monospace,monospace">INDIVIDUAL</text>
+        <text x="504" y="398" font-size="9" fill="var(--ink-faint)" font-family="ui-monospace,monospace" text-anchor="end">INSTITUTIONAL</text>
+        <text x="284" y="416" font-size="8.5" fill="var(--ink-faint)" font-family="ui-monospace,monospace" letter-spacing="1.5" text-anchor="middle">SCOPE OF IMPACT</text>
+        <!-- plot frame + finish-here quadrant emphasis (top right = Invent x Institutional) -->
+        <rect x="284" y="16" width="224" height="174" fill="var(--ic-soft)"/>
+        <rect x="60" y="16" width="448" height="348" fill="none" stroke="var(--border-strong)" stroke-width="1"/>
+        <line x1="284" y1="16" x2="284" y2="364" stroke="var(--border-strong)" stroke-width="1"/>
+        <line x1="60" y1="190" x2="508" y2="190" stroke="var(--border-strong)" stroke-width="1"/>
         <!-- quadrant names: Invent row on top, Automate row below -->
-        <text x="24" y="40" font-size="8.5" fill="var(--ink-faint)" letter-spacing="1">INDIVIDUAL INVENTION</text>
-        <text x="456" y="40" font-size="8.5" fill="var(--ic)" letter-spacing="1" text-anchor="end" font-weight="700">INSTITUTIONAL CAPABILITY</text>
-        <text x="456" y="54" font-size="8" fill="var(--ic)" letter-spacing="1" text-anchor="end">FINISH HERE</text>
-        <text x="24" y="224" font-size="8.5" fill="var(--ink-faint)" letter-spacing="1">PERSONAL PRODUCTIVITY</text>
-        <text x="24" y="238" font-size="8" fill="var(--ink-faint)" letter-spacing="1">START HERE</text>
-        <text x="456" y="212" font-size="8.5" fill="var(--ink-faint)" letter-spacing="1" text-anchor="end">PROCESS AUTOMATION AT SCALE</text>
+        <text x="68" y="40" font-size="8.5" fill="var(--ink-faint)" letter-spacing="1">INDIVIDUAL INVENTION</text>
+        <text x="500" y="40" font-size="8.5" fill="var(--ic)" letter-spacing="1" text-anchor="end" font-weight="700">INSTITUTIONAL CAPABILITY</text>
+        <text x="500" y="54" font-size="8" fill="var(--ic)" letter-spacing="1" text-anchor="end">FINISH HERE</text>
+        <text x="68" y="210" font-size="8.5" fill="var(--ink-faint)" letter-spacing="1">PERSONAL PRODUCTIVITY</text>
+        <text x="68" y="224" font-size="8" fill="var(--ink-faint)" letter-spacing="1">START HERE</text>
+        <text x="500" y="210" font-size="8.5" fill="var(--ink-faint)" letter-spacing="1" text-anchor="end">PROCESS AUTOMATION AT SCALE</text>
         <!-- empty individual-scope quadrants -->
-        <text x="128" y="112" font-size="9" fill="var(--ink-faint)" font-style="italic" text-anchor="middle">— none publicly reported —</text>
-        <text x="128" y="296" font-size="9" fill="var(--ink-faint)" font-style="italic" text-anchor="middle">— none publicly reported —</text>
+        <text x="172" y="112" font-size="9" fill="var(--ink-faint)" font-style="italic" text-anchor="middle">— none publicly reported —</text>
+        <text x="172" y="292" font-size="9" fill="var(--ink-faint)" font-style="italic" text-anchor="middle">— none publicly reported —</text>
         <!-- start-here to finish-here trajectory -->
-        <line x1="150" y1="316" x2="342" y2="112" stroke="var(--ink-faint)" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#qarrow)"/>
+        <line x1="194" y1="316" x2="386" y2="112" stroke="var(--ink-faint)" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#qarrow)"/>
         <!-- IC candidates (top right: Invent x Institutional) -->
-        <circle cx="430" cy="140" r="8" fill="var(--ic)"/>
-        <text x="416" y="144" font-size="10" fill="var(--ink-soft)" text-anchor="end">Aura provenance consortium</text>
-        <circle cx="398" cy="86" r="8" fill="none" stroke="var(--ic)" stroke-width="1.5" stroke-dasharray="3 2"/>
-        <text x="384" y="90" font-size="10" fill="var(--ink-soft)" text-anchor="end">Forecast-to-shelf loop (unverified)</text>
+        <circle cx="474" cy="140" r="8" fill="var(--ic)"/>
+        <text x="460" y="144" font-size="10" fill="var(--ink-soft)" text-anchor="end">Aura provenance consortium</text>
+        <circle cx="442" cy="86" r="8" fill="none" stroke="var(--ic)" stroke-width="1.5" stroke-dasharray="3 2"/>
+        <text x="428" y="90" font-size="10" fill="var(--ink-soft)" text-anchor="end">Forecast-to-shelf loop (unverified)</text>
         <!-- PA cluster (bottom right: Automate x Institutional) -->
-        <circle cx="415" cy="250" r="7" fill="var(--pa)"/>
-        <text x="402" y="254" font-size="10" fill="var(--ink-soft)" text-anchor="end">Forecasting, try-on, trend CV</text>
-        <circle cx="386" cy="284" r="7" fill="var(--pa)"/>
-        <text x="373" y="288" font-size="10" fill="var(--ink-soft)" text-anchor="end">AI models / content generation</text>
-        <circle cx="428" cy="318" r="7" fill="var(--pa)"/>
-        <text x="415" y="322" font-size="10" fill="var(--ink-soft)" text-anchor="end">Post-hoc authentication</text>
+        <circle cx="459" cy="250" r="7" fill="var(--pa)"/>
+        <text x="446" y="254" font-size="10" fill="var(--ink-soft)" text-anchor="end">Forecasting, try-on, trend CV</text>
+        <circle cx="430" cy="284" r="7" fill="var(--pa)"/>
+        <text x="417" y="288" font-size="10" fill="var(--ink-soft)" text-anchor="end">AI models / content generation</text>
+        <circle cx="472" cy="318" r="7" fill="var(--pa)"/>
+        <text x="459" y="322" font-size="10" fill="var(--ink-soft)" text-anchor="end">Post-hoc authentication</text>
         </svg>
         <p class="map-note">The two individual-scope quadrants render empty because no initiatives are publicly reported at that scope — a reporting-visibility gap, not a confirmed absence. Full 12-row classification: <a href="research.html#rm-investment">Research Materials → Investment Landscape</a>.</p>
       </div>
