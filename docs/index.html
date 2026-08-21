@@ -1,16 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B6Q7TYNEDR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B6Q7TYNEDR');
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Two Hills Lab — evidence-graded AI strategy research, one industry at a time</title>
-<meta name="description" content="Two Hills Lab applies one framework — Automation vs. Invention, Individual vs. Institutional — across industries. Every claim numbered, dated, and tiered against its evidence.">
-<meta property="og:title" content="Two Hills Lab — theAIFolks.com">
+<title>theAIFolks — evidence-graded AI strategy research, one industry at a time</title>
+<meta name="description" content="theAIFolks applies one framework — Automation vs. Invention, Individual vs. Institutional — across industries. Every claim numbered, dated, and tiered against its evidence.">
+<meta property="og:title" content="theAIFolks — theAIFolks.com">
 <meta property="og:description" content="Evidence-graded AI strategy research, one industry at a time. No vendor quadrant, no paywall.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23453D82'/%3E%3Cpath d='M2 26 L11 12 L17 20 L23 9 L30 26 Z' fill='%23F4F5F3'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/site.css">
-<script src="assets/js/site.js" defer></script>
+<link rel="stylesheet" href="assets/css/site.css?v=2">
+<script src="assets/js/site.js?v=2" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -18,8 +27,8 @@
 <header class="site-header">
   <div class="site-header-inner">
     <a href="./" class="wordmark">
-      <span class="name">Two Hills Lab</span>
-      <span class="tag mono">theAIFolks.com</span>
+      <span class="name">the<span class="ai">AI</span>Folks</span>
+      <span class="tag mono">AI Strategy Research</span>
     </a>
     <nav class="site-nav" aria-label="Primary">
       <a href="./" aria-current="page">Domains</a>
@@ -43,9 +52,9 @@
     <section class="hero no-rule">
       <span class="eyebrow"><span class="dot"></span>AI strategy research, one industry at a time</span>
       <h1 class="serif">What is everyone automating&nbsp;— and what could AI make possible for the first time?</h1>
-      <p class="sub">Two Hills Lab applies one framework, consistently, across industries: Automation vs. Invention, Individual vs. Institutional. Every claim in every report is numbered, dated, and tiered against its evidence. No vendor quadrant, no consulting upsell, no paywall — for now.</p>
+      <p class="sub">theAIFolks applies one framework, consistently, across industries: Automation vs. Invention, Individual vs. Institutional. Every claim in every report is numbered, dated, and tiered against its evidence. No vendor quadrant, no consulting upsell, no paywall — for now.</p>
       <div class="hero-actions">
-        <a href="domains/fashion/" class="btn">Open the Fashion &amp; Luxury domain</a>
+        <a href="domains/fashion/report.html" class="btn">Read the Fashion &amp; Luxury report</a>
         <a href="problems/" class="btn btn-ghost">Browse Unsolved Problems →</a>
       </div>
     </section>
@@ -57,20 +66,20 @@
   <section id="domains" class="no-rule">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Domain directory</span>
-        <h2>By industry, not by date</h2>
+        <span class="section-kicker">Domain reports</span>
+        <h2>Pick your industry</h2>
       </div>
     </div>
-    <p class="section-intro" style="margin-bottom:26px;">One card per domain. Each domain fans out to its own report, its raw research materials, and the unsolved problems it has contributed to the cross-domain index below. Domains with nothing published yet are shown honestly, not padded.</p>
+    <p class="section-intro" style="margin-bottom:26px;">Each domain gets a full report, the complete research materials behind it, and its entries in the cross-domain unsolved-problems index.</p>
 
     <div class="tier-divider">
-      <span class="lbl">Published &amp; in research — 1</span>
+      <span class="lbl">Published — 1</span>
       <span class="line"></span>
     </div>
 
     <div class="domain-card">
       <div class="domain-card-main">
-        <span class="status-chip"><span class="dot"></span>In research</span>
+        <span class="status-chip published"><span class="dot"></span>Published</span>
         <h3 class="serif">AI in the Fashion Industry</h3>
         <p class="desc">Spend is real and rising — tech investment as a share of sales is projected to nearly double by 2030, and AI is now named executives' single biggest opportunity for 2026. Nearly all of it is landing in one quadrant. Two candidates break the pattern.</p>
         <div class="meta">
@@ -80,26 +89,27 @@
           <span aria-hidden="true">·</span>
           <span>4 unsolved-problem entries</span>
           <span aria-hidden="true">·</span>
-          <span>Article drafted — final review pending</span>
+          <span>Published August 2026</span>
         </div>
         <div class="domain-card-actions">
-          <a href="domains/fashion/" class="link-arrow">Open Fashion &amp; Luxury →</a>
+          <a href="domains/fashion/report.html" class="link-arrow">Read the report →</a>
+          <a href="domains/fashion/summary.html" class="link-arrow">Executive summary →</a>
+          <a href="domains/fashion/" class="link-arrow">Research &amp; more →</a>
         </div>
       </div>
       <div class="domain-card-side">
-        <label for="notify-fashion">Notify me when this publishes</label>
-        <!-- TODO-replace-with-real-form-id: create a Formspree form and replace the action URL (see DEPLOY.md) -->
-        <form class="notify-row" action="https://formspree.io/f/TODO-replace-with-real-form-id" method="POST">
-          <input id="notify-fashion" type="email" name="email" required placeholder="you@company.com">
+        <label for="notify-fashion">Get the next report</label>
+        <form class="notify-row" action="https://app.kit.com/forms/9828204/subscriptions" method="POST">
+          <input id="notify-fashion" type="email" name="email_address" required placeholder="you@company.com">
           <input type="hidden" name="context" value="notify-fashion">
           <button type="submit">Notify me</button>
         </form>
-        <p class="fineprint">One domain, one email. No publishing schedule to promise — just a notice the day it's live.</p>
+        <p class="fineprint">A new domain report every Thursday — a note the day each goes live.</p>
       </div>
     </div>
 
     <div class="tier-divider">
-      <span class="lbl">Planned — 4, not yet started</span>
+      <span class="lbl">Coming up — a new domain every Thursday</span>
       <span class="line"></span>
     </div>
 
@@ -107,53 +117,49 @@
       <div class="planned-card">
         <span class="status-chip planned"><span class="dot"></span>Planned</span>
         <h3>Real Estate</h3>
-        <p class="pdesc">Announced as a future domain. Research hasn't started — no thesis, no sources, no stats to show yet.</p>
-        <!-- TODO-replace-with-real-form-id -->
-        <form class="notify-row" action="https://formspree.io/f/TODO-replace-with-real-form-id" method="POST">
-          <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address — notify me about Real Estate">
+        <p class="pdesc">Report expected <span class="mono">Thursday, Aug 27, 2026</span>.</p>
+        <form class="notify-row" action="https://app.kit.com/forms/9828204/subscriptions" method="POST">
+          <input type="email" name="email_address" required placeholder="you@company.com" aria-label="Email address — notify me about Real Estate">
           <input type="hidden" name="context" value="notify-real-estate">
           <button type="submit">Notify</button>
         </form>
-        <p class="fineprint">We'll email once research begins — not before.</p>
+        <p class="fineprint">One email when research begins.</p>
       </div>
       <div class="planned-card">
         <span class="status-chip planned"><span class="dot"></span>Planned</span>
         <h3>Primary Education</h3>
-        <p class="pdesc">Announced as a future domain. Research hasn't started — no thesis, no sources, no stats to show yet.</p>
-        <!-- TODO-replace-with-real-form-id -->
-        <form class="notify-row" action="https://formspree.io/f/TODO-replace-with-real-form-id" method="POST">
-          <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address — notify me about Primary Education">
+        <p class="pdesc">Report expected <span class="mono">Thursday, Sep 3, 2026</span>.</p>
+        <form class="notify-row" action="https://app.kit.com/forms/9828204/subscriptions" method="POST">
+          <input type="email" name="email_address" required placeholder="you@company.com" aria-label="Email address — notify me about Primary Education">
           <input type="hidden" name="context" value="notify-primary-education">
           <button type="submit">Notify</button>
         </form>
-        <p class="fineprint">We'll email once research begins — not before.</p>
+        <p class="fineprint">One email when research begins.</p>
       </div>
       <div class="planned-card">
         <span class="status-chip planned"><span class="dot"></span>Planned</span>
         <h3>Hospitals</h3>
-        <p class="pdesc">Announced as a future domain. Research hasn't started — no thesis, no sources, no stats to show yet.</p>
-        <!-- TODO-replace-with-real-form-id -->
-        <form class="notify-row" action="https://formspree.io/f/TODO-replace-with-real-form-id" method="POST">
-          <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address — notify me about Hospitals">
+        <p class="pdesc">Report expected <span class="mono">Thursday, Sep 10, 2026</span>.</p>
+        <form class="notify-row" action="https://app.kit.com/forms/9828204/subscriptions" method="POST">
+          <input type="email" name="email_address" required placeholder="you@company.com" aria-label="Email address — notify me about Hospitals">
           <input type="hidden" name="context" value="notify-hospitals">
           <button type="submit">Notify</button>
         </form>
-        <p class="fineprint">We'll email once research begins — not before.</p>
+        <p class="fineprint">One email when research begins.</p>
       </div>
       <div class="planned-card">
         <span class="status-chip planned"><span class="dot"></span>Planned</span>
         <h3>Pharmaceuticals</h3>
-        <p class="pdesc">Announced as a future domain. Research hasn't started — no thesis, no sources, no stats to show yet.</p>
-        <!-- TODO-replace-with-real-form-id -->
-        <form class="notify-row" action="https://formspree.io/f/TODO-replace-with-real-form-id" method="POST">
-          <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address — notify me about Pharmaceuticals">
+        <p class="pdesc">Report expected <span class="mono">Thursday, Sep 17, 2026</span>.</p>
+        <form class="notify-row" action="https://app.kit.com/forms/9828204/subscriptions" method="POST">
+          <input type="email" name="email_address" required placeholder="you@company.com" aria-label="Email address — notify me about Pharmaceuticals">
           <input type="hidden" name="context" value="notify-pharmaceuticals">
           <button type="submit">Notify</button>
         </form>
-        <p class="fineprint">We'll email once research begins — not before.</p>
+        <p class="fineprint">One email when research begins.</p>
       </div>
     </div>
-    <p class="fineprint" style="margin-top:14px;">More domains will follow. Nothing above is invented — a "Planned" card means exactly what it says: announced, not yet researched.</p>
+    <p class="fineprint" style="margin-top:14px;">More domains will follow.</p>
   </section>
 
   <section aria-label="Unsolved Problems teaser">
@@ -207,12 +213,11 @@
   <section id="subscribe">
     <div class="subscribe-block">
       <div>
-        <h2 class="serif">Get new domain reports when they publish</h2>
-        <p>Fashion &amp; Luxury is the first domain in research. No cadence promised — just a note the day a new report goes live.</p>
+        <h2 class="serif">A new domain report every Thursday</h2>
+        <p>Fashion &amp; Luxury shipped first. Real Estate arrives Thursday, Aug 27 — subscribers get a note the day each report goes live.</p>
       </div>
-      <!-- TODO-replace-with-real-form-id: create a Formspree form and replace the action URL (see DEPLOY.md) -->
-      <form class="subscribe-form" action="https://formspree.io/f/TODO-replace-with-real-form-id" method="POST">
-        <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address">
+      <form class="subscribe-form" action="https://app.kit.com/forms/9828204/subscriptions" method="POST">
+        <input type="email" name="email_address" required placeholder="you@company.com" aria-label="Email address">
         <input type="hidden" name="context" value="home-subscribe">
         <button type="submit">Subscribe</button>
       </form>
@@ -226,7 +231,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <span class="wordmark"><span class="name" style="font-size:16px;">Two Hills Lab</span></span>
+        <span class="wordmark"><span class="name" style="font-size:16px;">the<span class="ai">AI</span>Folks</span></span>
         <p class="fineprint" style="margin-top:10px;max-width:32ch;">Evidence-graded AI strategy research, one industry at a time. Published at theAIFolks.com.</p>
       </div>
       <div>
@@ -256,7 +261,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Two Hills Lab. Evidence-graded, not comprehensive — see each domain's "Known gaps."</span>
+      <span>© 2026 theAIFolks — an initiative by Manasi K G &amp; Sudhir Patavardhan. Evidence-graded, not comprehensive — see each domain's "Known gaps."</span>
       <span class="mono">theAIFolks.com</span>
     </div>
   </div>

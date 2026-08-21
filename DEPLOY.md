@@ -53,29 +53,27 @@ file; lowercase is conventional — domains are case-insensitive).
 If GitHub ever reports the CNAME file conflicting with the Pages setting, the setting
 wins — re-saving the custom domain rewrites `docs/CNAME`.
 
-## 3. Email capture: create the form and replace the placeholder
+## 3. Email capture: Kit (formerly ConvertKit)
 
-Every subscribe/notify form currently posts to a placeholder:
+Done. All 9 subscribe/notify forms now POST directly to the site owner's Kit form
+(no JS, no widget script — a plain HTML form submit to Kit's hosted endpoint,
+which redirects the browser to Kit's confirmation page):
 
 ```
-action="https://formspree.io/f/TODO-replace-with-real-form-id"
+action="https://app.kit.com/forms/9828204/subscriptions"
 ```
 
-1. Create a free account at https://formspree.io (or any static-friendly form service —
-   Buttondown and ConvertKit also work; only the `action` URL changes).
-2. Create one form; note its endpoint, e.g. `https://formspree.io/f/abcd1234`.
-   One form is enough — every submission carries a hidden `context` field
-   (`home-subscribe`, `notify-fashion`, `notify-real-estate`, `end-of-article`, …)
-   so you can tell placements apart in the dashboard.
-3. Replace the placeholder in all files at once:
+Every submission still carries a hidden `context` field (`home-subscribe`,
+`notify-fashion`, `notify-real-estate`, `end-of-article`, …) so placements can be
+told apart in the Kit dashboard — Kit ignores the field, it's for our own reference.
+The email input's `name` attribute is `email_address` (Kit's required field name).
 
-   ```
-   grep -rl 'TODO-replace-with-real-form-id' docs/ | xargs sed -i '' 's/TODO-replace-with-real-form-id/abcd1234/g'
-   ```
+Files containing forms: `docs/index.html` (6 forms), `docs/about.html`,
+`docs/domains/fashion/index.html`, `docs/domains/fashion/report.html`.
 
-   Files containing forms: `docs/index.html` (6 forms), `docs/about.html`,
-   `docs/domains/fashion/index.html`, `docs/domains/fashion/report.html`.
-4. Submit one test email from the live site and confirm it arrives.
+If the form ever needs to change (new Kit form, or a different provider), edit the
+`action` URL and the email input's `name` attribute directly in each of the 9 forms
+across those 4 files — there's no build step or templating to run.
 
 ## 4. Pre-publish checklist (before calling Fashion "Published")
 
@@ -83,18 +81,15 @@ The Fashion article is content-complete but has **not** passed final editorial
 sign-off. It ships labeled "Preview — final review pending" everywhere. When sign-off
 happens:
 
-- [ ] Final editorial review of `docs/domains/fashion/report.html` against
+- [x] Final editorial review of `docs/domains/fashion/report.html` against
       `domains/fashion/03-article/draft.md` (and the repo's `publishing/checklist.md`).
-- [ ] Remove the preview banner: in `docs/domains/fashion/report.html`, delete the
-      single clearly-marked block between
-      `<!-- PREVIEW BANNER — REMOVE AT PUBLISH TIME -->` and
-      `<!-- END PREVIEW BANNER -->`. Nothing else references it.
-- [ ] Update status wording: "Preview — final review pending" appears in the report
-      byline and fan-out card, "final review pending" on the home card, and
-      "Preview" in `summary.html`'s kicker — change to "Published" + date. The
-      "In research" status chips (home + domain landing) become "Published".
+      Done 2026-08 — user sign-off; checklist pass recorded in session log.
+- [x] Remove the preview banner — done 2026-08.
+- [x] Update status wording to "Published" + date (report byline, fan-out card,
+      home card, summary kicker, status chips) — done 2026-08.
 - [ ] Re-run the sanity greps: `grep -ri 'theafolks' docs/` (must be empty — that's
-      the old misspelling), `grep -r 'TODO-replace' docs/` (must be empty).
+      the old misspelling), `grep -r 'TODO-replace' docs/` (must be empty — it is,
+      email capture is wired to Kit as of 2026-08, see §3).
 - [ ] Confirm the evidence log still matches `domains/fashion/00-research/sources.md`
       (80 rows). If sources.md changed, regenerate the two embedded tables with the
       generator script (see below).
@@ -111,6 +106,7 @@ id="src-N" data-tier="…">` per source plus group-header rows).
 
 ## 6. What deployment does NOT include
 
-- No analytics, no cookies, no external CDNs, webfonts, or third-party JS — the only
-  external endpoint is the form service you configure in step 3.
+- No cookies banner, no external CDNs, no webfonts — Google Analytics (gtag.js) is the
+  one third-party script, on every page; the Kit form endpoint from step 3 is the other
+  external touchpoint.
 - No paywall, no accounts, no comments — by design (see `site/design/architecture.md` §10).
