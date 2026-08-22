@@ -122,4 +122,24 @@
       }
     });
   });
+
+  /* ---------- Copy pre-written post text (e.g. "Copy for LinkedIn") ---------- */
+  /* Text lives in a hidden <template> referenced by data-copy-target, so it stays
+     readable/editable in the page source instead of being crammed into an attribute. */
+  document.querySelectorAll("[data-copy-target]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var target = document.querySelector(btn.getAttribute("data-copy-target"));
+      var text = target ? target.textContent.trim() : "";
+      function done() {
+        var old = btn.textContent;
+        btn.textContent = "Copied";
+        setTimeout(function () { btn.textContent = old; }, 1600);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () { prompt("Copy post text:", text); });
+      } else {
+        prompt("Copy post text:", text);
+      }
+    });
+  });
 })();
