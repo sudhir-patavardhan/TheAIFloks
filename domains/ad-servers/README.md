@@ -1,0 +1,9 @@
+# Domain: Ad Servers & Ad-Delivery Infrastructure
+
+Status: ☑ Research ☑ Brainstorm ☑ Analysis ☑ Draft ☑ Published (2026-08, theAIFolks.com)
+
+**One-line thesis (fill in last):** The durable AI moat in ad-serving isn't the orchestration layer — two rival open standards are already racing to commoditize it, the way Prebid did to header bidding — it's the proprietary decision engine *plus* genuinely exclusive data feeding it. The Trade Desk's own moat downgrade (Morningstar, March 2026) is the cautionary case: great AI decisioning (Kokai) without exclusive data (UID2 is open/multi-tenant) still isn't a moat, unlike AppLovin's AXON or Unity's Vector, both built on fully owned, closed-loop data.
+
+Work through folders in order: `00-research` → `01-brainstorm` → `02-analysis` → `03-article`.
+
+Research phase output: see `00-research/ad-servers-ai-domain-report.md` for the synthesized report, `00-research/sources.md` for the full evidence log (112 sourced claims), `00-research/investment-landscape.md` for the 2x2 mapping, `00-research/industry-challenges.md` for AI-agnostic structural context (antitrust, consolidation, trust erosion, fraud), and `00-research/unsolved-problems.md` for binding-constraint analysis. Brainstorm phase complete: one full grill-me session plus a follow-up research pass resolving its open questions — see `01-brainstorm/grill-me-log.md` for the full adversarial session, including two corrections the follow-up pass forced (the "agent-to-agent negotiation" framing didn't hold up; TTD's Koa/Kokai turned out to be a moat *downgrade*, not IC evidence). Analysis: `02-analysis/two-hills-map.md` (quadrant map, falsification check, one-paragraph thesis). Article: `03-article/draft.md` (full argument with buy-side and sell-side CTO decision guidance) and `03-article/executive-summary.md`. Published to theAIFolks.com (report, executive summary, research materials, unsolved-problems entries, OG image).
