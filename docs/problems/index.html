@@ -56,7 +56,8 @@
     <p class="problems-intro">Real constraints that have resisted solving, each tested against a single question: does AI actually remove the binding constraint, or just speed up work inside it? Every entry carries its full analysis and source trail. For problem solvers and investors looking for what's genuinely unbuilt.</p>
 
     <div class="problems-filter-row" data-problems-filter>
-      <button type="button" class="filter-chip" data-domain="all" aria-pressed="true">All problems (5)</button>
+      <button type="button" class="filter-chip" data-domain="all" aria-pressed="true">All problems (10)</button>
+      <button type="button" class="filter-chip" data-domain="ad-servers" aria-pressed="false">Ad Servers (5)</button>
       <button type="button" class="filter-chip" data-domain="fashion" aria-pressed="false">Fashion (4)</button>
       <button type="button" class="filter-chip" data-domain="quality-engineering" aria-pressed="false">Quality engineering — reference case (1)</button>
       <button type="button" class="filter-chip disabled" disabled title="Planned domain — no entries yet">Real Estate (0)</button>
@@ -67,6 +68,120 @@
   </section>
 
   <section class="no-rule" style="padding-top:26px;">
+
+    <details class="problem-card" data-domain="ad-servers" id="ad-servers" open>
+      <summary>
+        <span class="q">The ad server buys the media and then grades its own campaign — who audits AI-optimized ad spend the way accountants audit books?</span>
+        <span class="verdict-pill open">Open opportunity</span>
+        <span class="domain-tag-pill">Ad Servers</span>
+        <span class="chev" aria-hidden="true">▶</span>
+      </summary>
+      <div class="pbody">
+        <dl>
+          <dt>Why it was considered unsolvable</dt>
+          <dd>The party operating the ad-decisioning engine and the party measuring its success are typically the same party, or use the same underlying signals — a self-grading conflict of interest, not a lack of measurement sophistication. Rigorous randomized geo-holdout testing is slow, expensive, and against the platform's commercial interest.</dd>
+          <dt>What the evidence shows</dt>
+          <dd>The one independent check found — a study of 640 Meta geo-lift tests — found Advantage+, Meta's most-automated campaign type, beating manual campaigns in only 42% of tests, and delivering 12% lower incremental return even when it won <a class="cite" href="../domains/ad-servers/report.html#src-54">#54</a>. That single independent finding stands against dozens of platform-reported, self-selected case studies making the opposite claim <a class="cite" href="../domains/ad-servers/report.html#src-48">#48</a> <a class="cite" href="../domains/ad-servers/report.html#src-50">#50</a> <a class="cite" href="../domains/ad-servers/report.html#src-51">#51</a> — every one of them the ad server reporting on its own campaign.</dd>
+          <dt>The gap</dt>
+          <dd>No standardized, industry-trusted, external-audit layer for incrementality exists — nothing that sits outside the ad server's control the way a financial auditor sits outside the company it audits. No source in a 112-claim evidence base showed any platform submitting its AI-optimized campaigns to independent adversarial testing as standard practice.</dd>
+          <dt>Why it's an opportunity, not just a flaw</dt>
+          <dd>Advertisers are already cutting spend they cannot audit <a class="cite" href="../domains/ad-servers/report.html#src-53">#53</a> and 62% of practitioners name black-box platforms their top challenge <a class="cite" href="../domains/ad-servers/report.html#src-55">#55</a> — the demand side of an audit market already exists. Whoever builds the trusted, standardized holdout methodology becomes the layer every AI-spend decision has to pass through.</dd>
+          <dt>Verdict</dt>
+          <dd class="verdict-line"><span class="verdict-pill open">Open opportunity</span><span>— the measurement infrastructure is unbuilt; the conflict of interest it would resolve is adjudicated fact in the auction layer and documented pattern in the measurement layer.</span></dd>
+        </dl>
+        <p class="deep-dive">Deep dive: <a href="../domains/ad-servers/research.html#rm-problems">Ad Servers Research Materials → Unsolved Problems</a></p>
+      </div>
+    </details>
+
+    <details class="problem-card" data-domain="ad-servers" open>
+      <summary>
+        <span class="q">Can an auction be transparent to both its buyers and sellers when its operator profits from seeing more than either?</span>
+        <span class="verdict-pill pa">Automation in disguise</span>
+        <span class="domain-tag-pill">Ad Servers</span>
+        <span class="chev" aria-hidden="true">▶</span>
+      </summary>
+      <div class="pbody">
+        <dl>
+          <dt>Why it was considered unsolvable</dt>
+          <dd>Whoever operates the infrastructure clearing the auction has both the ability and the incentive to see more of it than the parties transacting on it. This isn't a modeling problem; it's a conflict of interest baked into who owns the pipes — and it is now adjudicated fact: a US court found Google illegally tied its publisher ad server and exchange <a class="cite" href="../domains/ad-servers/report.html#src-71">#71</a>, and the EU found Google informed its own exchange of rival bids it needed to beat, since at least 2014 <a class="cite" href="../domains/ad-servers/report.html#src-73">#73</a>.</dd>
+          <dt>Binding constraint</dt>
+          <dd>Structural information asymmetry held by the infrastructure owner, which that owner has no commercial incentive to surrender voluntarily.</dd>
+          <dt>Does AI remove the constraint?</dt>
+          <dd>No. The AI "transparency" features shipped since — reporting expansions <a class="cite" href="../domains/ad-servers/report.html#src-57">#57</a>, conversational copilots <a class="cite" href="../domains/ad-servers/report.html#src-1">#1</a> — add visibility into what already happened after the auction cleared. And the agent-to-agent protocols marketed as "negotiation" turn out, in their own technical documentation, to be discovery-then-approve sequences with no counter-offer step, executing through conventional RTB underneath <a class="cite" href="../domains/ad-servers/report.html#src-98">#98</a> <a class="cite" href="../domains/ad-servers/report.html#src-99">#99</a>. Richer discovery on an unchanged auction is automation of the lookup, not removal of the asymmetry.</dd>
+          <dt>Verdict</dt>
+          <dd class="verdict-line"><span class="verdict-pill pa">Automation in disguise</span><span>— for everything shipped as "AI transparency" to date. The strongest force acting on the actual constraint is regulatory, not technological: remedies rulings pending on two continents.</span></dd>
+        </dl>
+        <p class="deep-dive">Deep dive: <a href="../domains/ad-servers/research.html#rm-problems">Ad Servers Research Materials → Unsolved Problems</a></p>
+      </div>
+    </details>
+
+    <details class="problem-card" data-domain="ad-servers">
+      <summary>
+        <span class="q">Can AI resolve who a user is across platforms without cookies — or did the industry just route around the question?</span>
+        <span class="verdict-pill pa">Automation in disguise</span>
+        <span class="domain-tag-pill">Ad Servers</span>
+        <span class="chev" aria-hidden="true">▶</span>
+      </summary>
+      <div class="pbody">
+        <dl>
+          <dt>Why it was considered unsolvable</dt>
+          <dd>Recognizing the same user across publishers and platforms requires either a shared ground truth no single company controls, or invasive tracking that browsers and regulators are closing off. No modeling skill substitutes for parties who won't share data.</dd>
+          <dt>Binding constraint</dt>
+          <dd>A coordination and consent problem across many independent controllers of the user relationship — not a technical resolution problem.</dd>
+          <dt>Does AI remove the constraint?</dt>
+          <dd>No — and the six-year browser-native attempt just failed: Google reversed its cookie-deprecation plan and retired more than ten Privacy Sandbox APIs for low adoption <a class="cite" href="../domains/ad-servers/report.html#src-76">#76</a> <a class="cite" href="../domains/ad-servers/report.html#src-77">#77</a>. What scaled instead is deterministic, consent-based identity — UID2 <a class="cite" href="../domains/ad-servers/report.html#src-78">#78</a>, LiveRamp's graph, which Publicis is buying outright for $2.17B <a class="cite" href="../domains/ad-servers/report.html#src-81">#81</a>. AI sits on top of that already-solved consent layer as an access interface; it is not the mechanism that resolves identity. The sharpest confirmation is negative: Morningstar's moat downgrade of The Trade Desk reasoned specifically that UID2, as an open multi-tenant standard, is not an exclusive asset <a class="cite" href="../domains/ad-servers/report.html#src-101">#101</a> <a class="cite" href="../domains/ad-servers/report.html#src-106">#106</a>.</dd>
+          <dt>Verdict</dt>
+          <dd class="verdict-line"><span class="verdict-pill pa">Automation in disguise</span><span>— identity was solved by consent and acquisition, not by AI. The moat is ownership of the consented graph, and open standards branded "proprietary" are not the same asset.</span></dd>
+        </dl>
+        <p class="deep-dive">Deep dive: <a href="../domains/ad-servers/research.html#rm-problems">Ad Servers Research Materials → Unsolved Problems</a></p>
+      </div>
+    </details>
+
+    <details class="problem-card" data-domain="ad-servers">
+      <summary>
+        <span class="q">Fraud detection keeps getting smarter — so why does ad fraud keep growing faster than the detection?</span>
+        <span class="verdict-pill pa">Automation in disguise</span>
+        <span class="domain-tag-pill">Ad Servers</span>
+        <span class="chev" aria-hidden="true">▶</span>
+      </summary>
+      <div class="pbody">
+        <dl>
+          <dt>Why it was considered unsolvable</dt>
+          <dd>An adversarial arms race, not a static classification problem — any detection signal, once learned, gets reverse-engineered and evaded. A fraud model decays the moment it succeeds.</dd>
+          <dt>Binding constraint</dt>
+          <dd>Adversarial adaptation speed. The defense's historical tooling advantage disappears once both sides hold similarly capable AI.</dd>
+          <dt>Does AI remove the constraint?</dt>
+          <dd>By the defense's own published numbers, no — the offense is accelerating faster. One verification vendor's telemetry shows bot traffic growing ~8x faster than human traffic, with AI-agent traffic up 7,851% year over year <a class="cite" href="../domains/ad-servers/report.html#src-83">#83</a> (vendor-reported, flagged as such). The industry's newest response is triage, not elimination: classifying declared legitimate AI agents apart from evasive scrapers <a class="cite" href="../domains/ad-servers/report.html#src-84">#84</a>. The standard waste baseline — only $0.36 of every DSP dollar reaching the consumer <a class="cite" href="../domains/ad-servers/report.html#src-82">#82</a> — has not been shown to improve despite years of AI detection tooling deployed at scale.</dd>
+          <dt>Institutional-capability formulation</dt>
+          <dd>Genuine constraint removal would change what gets paid for — restructuring the incentive that makes fraud profitable — rather than detecting bad impressions faster after the fact. No one in the evidence base is attempting that.</dd>
+          <dt>Verdict</dt>
+          <dd class="verdict-line"><span class="verdict-pill pa">Automation in disguise</span><span>— and currently losing the acceleration race it entered. The domain's clearest case of AI scaling both sides of a problem at once.</span></dd>
+        </dl>
+        <p class="deep-dive">Deep dive: <a href="../domains/ad-servers/research.html#rm-problems">Ad Servers Research Materials → Unsolved Problems</a></p>
+      </div>
+    </details>
+
+    <details class="problem-card" data-domain="ad-servers">
+      <summary>
+        <span class="q">Every agent in agentic advertising represents an institution — what if individuals' agents could aggregate into a negotiating bloc?</span>
+        <span class="verdict-pill neutral">Authors' proposal</span>
+        <span class="domain-tag-pill">Ad Servers</span>
+        <span class="chev" aria-hidden="true">▶</span>
+      </summary>
+      <div class="pbody">
+        <dl>
+          <dt>The structural fact</dt>
+          <dd>In every agent-to-agent advertising deal documented in this domain's research, both agents represent institutions — a platform's seller agent, an agency's buyer agent. The consumer, whose attention is the actual product, remains what they have always been: inventory. Individuals have never had a mechanism to negotiate collectively over the terms on which their attention and data are sold.</dd>
+          <dt>The proposal</dt>
+          <dd>The same protocol infrastructure now being standardized for institutional agents could, in principle, let individuals' agents aggregate into consortia — millions of consumer-side seller agents negotiating as a bloc. That would not automate the existing market; it would seat a new party at the table — the first genuinely new market structure this industry would have seen since the auction itself.</dd>
+          <dt>Status</dt>
+          <dd>This is the authors' original proposal (Sudhir Patavardhan, 2026-08), offered as such — nothing in the domain's 112-source evidence base shows any vendor building it, and it was deliberately not researched as a market claim to validate. It is logged here because the plumbing being standardized today is exactly the plumbing that would make it possible tomorrow.</dd>
+          <dt>Verdict</dt>
+          <dd class="verdict-line"><span class="verdict-pill neutral">Authors' proposal</span><span>— forward-looking, unbuilt, and flagged for anyone who wants to build it.</span></dd>
+        </dl>
+        <p class="deep-dive">Deep dive: <a href="../domains/ad-servers/report.html#blindspots">the report's Blindspots &amp; open fronts section</a></p>
+      </div>
+    </details>
 
     <details class="problem-card" data-domain="fashion" id="fashion" open>
       <summary>
